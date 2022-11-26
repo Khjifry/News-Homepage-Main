@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="container gap-4 container-division">
+      <nav class="navbar">
+        <header class="navbar-brand">
+          <img src="./assets/images/logo.svg" alt="" />
+        </header>
+        <ul class="nav">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">New</a></li>
+          <li><a href="#" class="nav-link">Popular</a></li>
+          <li><a href="#" class="nav-link">Trending</a></li>
+          <li><a href="#" class="nav-link">Categories</a></li>
+        </ul>
+        <img src="./assets/images/icon-menu.svg" alt="image_can't_load" class="me-1 toggle">
+        <img src="./assets/images/icon-menu-close.svg" alt="image_can't_load" class="me-1 close">
+      </nav>
+      <main>
+        <figure>
+          <img
+            alt="image_can't_load"
+          />
+          <figcaption class="my-4 d-flex">
+            <header>
+              <h2>The Bright Future of Web 3.0?</h2>
+            </header>
+            <div class="d-flex flex-column justify-content-between">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="w-50">READ MORE</button>
+            </div>
+          </figcaption>
+        </figure>
+      </main>
+      <aside class="bg-black px-4 py-3">
+        <header class="py-4">
+          <h3 class="fs-1">New</h3>
+        </header>
+        <article>
+          <header>
+            <h4 class="fs-5">Hydrogen VS Electric Cars</h4>
+          </header>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <hr />
+        <article>
+          <header>
+            <h4 class="fs-5">The Downsides of AI Artistry</h4>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </header>
+        </article>
+        <hr />
+        <article>
+          <header>
+            <h4 class="fs-5">Is VC Funding Drying Up?</h4>
+          </header>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </aside>
+      <section class="row mt-3">
+        <article class="col trending-item">
+          <figure class="d-flex">
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              alt="image_can't_load"
+              height="0px"
+            />
+            <figcaption class="mx-2">
+              <header>
+                <h4 class="d-flex flex-column gap-2 fs-5 m-0">
+                  <span class="fs-2">01</span> Reviving Retro PCs
+                </h4>
+              </header>
+              <p class="m-0 description">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="col trending-item">
+          <figure class="d-flex">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt="image_can't_load"
+              height="0px"
+            />
+            <figcaption class="mx-2">
+              <header>
+                <h4 class="d-flex flex-column gap-2 fs-5 m-0">
+                  <span class="fs-2">02</span> Top 10 Laptops of 2022
+                </h4>
+              </header>
+              <p class="m-0 description">
+                Our best picks for various needs and budgets.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="col trending-item">
+          <figure class="d-flex">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="image_can't_load"
+              height="0px"
+            />
+            <figcaption class="mx-2">
+              <header>
+                <h4 class="d-flex flex-column gap-2 fs-5 m-0">
+                  <span class="fs-2">03</span> The Growth of Gaming
+                </h4>
+              </header>
+              <p class="m-0 description">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </div>
+    <footer class="d-flex justify-content-center align-items-center mt-3 border-top border-1 border-dark">
+      <p>Copyright 2022 @Khadijah Aljufri</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

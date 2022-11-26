@@ -1,0 +1,166 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.container-division {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar navbar "
+    "main main main main aside aside"
+    "section section section section section section";
+}
+.navbar {
+  grid-area: navbar;
+  margin-top: 15px;
+}
+.navbar ul li a {
+  color: hsl(240, 100%, 5%);
+}
+.navbar ul li:hover a {
+  color: hsl(5, 85%, 63%);
+}
+.navbar .close,
+.navbar .toggle {
+  display: none;
+  font-size: 40px;
+}
+main {
+  grid-area: main;
+}
+main figure figcaption header,
+main figure figcaption div {
+  width: 50%;
+}
+main figure img{
+  content: url(./assets/images/image-web-3-desktop.jpg);
+  max-width: 100%;
+}
+main figure figcaption header h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+  width: 75%;
+}
+main figure figcaption div p {
+  font-size: 17px;
+  width: 95%;
+}
+main figure figcaption div button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  outline: none;
+  color: white;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+main figure figcaption div button:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+aside hr {
+  border-color: hsl(233, 8%, 79%);
+}
+aside header h3,
+aside article header h4 {
+  font-weight: 700;
+}
+aside header h3 {
+  color: hsl(35, 77%, 62%);
+}
+aside article header h4 {
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+aside article header h4:hover {
+  color: hsl(35, 77%, 62%);
+}
+aside article p {
+  color: hsl(233, 8%, 79%);
+}
+section {
+  grid-area: section;
+}
+section article figure figcaption header h4{
+  font-weight: 700;
+  color: hsl(240, 100%, 5%);
+  cursor: pointer;
+  white-space: nowrap;
+}
+section article figure figcaption header h4:not(span):hover {
+  color: hsl(5, 85%, 63%);
+}
+
+section article figure figcaption header h4 span {
+  color: hsl(233, 8%, 79%);
+  cursor: auto;
+}
+section article figure figcaption .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+footer {
+  height: 70px;
+}
+@media screen and (max-width: 992px) {
+  .container-division {
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar navbar"
+      "main main main main main main"
+      "aside aside aside aside aside aside"
+      "section section section section section section";
+  }
+}
+@media screen and (max-width: 768px) {
+  main figure img{
+    content: url(./assets/images/image-web-3-mobile.jpg);
+  }
+  main figure figcaption {
+    flex-direction: column;
+  }
+  main figure figcaption header,
+  main figure figcaption div {
+    width: 100%;
+  }
+  main figure figcaption header h2 {
+    width: 95%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 0 100vmax #0005;
+    z-index: 1;
+  }
+  .navbar .toggle {
+    display: block;
+  }
+  .navbar .toggle.active {
+    display: none;
+  }
+  .navbar .close.active {
+    display: block;
+    z-index: 2;
+  }
+  body:has(.navbar ul.active) {
+    overflow: hidden;
+  }
+}
